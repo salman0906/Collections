@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Return</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="icon" href="data:image/png;base64,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" type="icon/png">
+	<style>
+  option{
+    font-size:25px;
+    color:#04009a;
+  }
+
+  .show {
+    display: block;
+  }
+
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+
+
+  /* Avatar image */
+  img.avatar {
+    width: 20%;
+    border-radius: 50%;
+  }
+
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  #a1{
+    width: 300px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .ad{
+    margin-bottom: 2px;
+    margin-left:20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #04009a;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: blue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  #title {
+    background-color: #04009a;
+    color: #04009a;
+    text-align: left;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  tr{
+    height:40px;
+  }
+  th{
+    font-size: 20px;
+    text-align:centre;
+  }
+</style>
+
+</head>
+<body style="background-color:#E6E6FA;color: #04009a;font-family:Arial Rounded Bold;">
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg" style="background-color: #04009a">
+
+        <a class="navbar-brand" href=""><img style="width:200px;margin-top:5px;margin-bottom:5px" src="https://see.fontimg.com/api/renderfont4/lgg8q/eyJyIjoiZHciLCJoIjoxNTAsInciOjEyNTAsImZzIjoxMjAsImZnYyI6IiNGRkZGRkYiLCJiZ2MiOiIjMDcwQjk3In0/TWFndXM/vampire-wars-italic.png" id="a1"></a>
+
+        <div class="collapse navbar-collapse">
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <div class="dropdown ad">
+                    <span style="font-size:20px;color:white;"><%=cname%></span>
+                      <div class="dropdown-content" style="font-size:15px;">
+                        <a href="/Profile">Profile</a>
+                        <a href="/">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+      </section>
+      <div class="row" style=" height:650px">
+        <div class="col-2" style="padding-top:30px; height:600px;  border-radius: 25px; border: 4px solid #04009a;">
+          <br><a class="ad" href=  "/assign">Assign Beat</a>
+          <br><a class="ad" href="/bill">Billing</a>
+          <br><a class="ad" href="/stock">Return</a>
+          <br><a class="ad" href="/reports">Reports</a>
+          <br><a class="ad" href="/add">Add</a>
+          <br><a class="ad" href="/edit">Edit</a>
+        <br><div class="dropdown ad">
+              <span>Edit Beat</span>
+                <div class="dropdown-content" style="font-size:15px;">
+                  <a href="/addbeat">Add Beat</a>
+                  <a href="/editbeat">Edit Beat</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-10">
+        <form action="/rr" method="post">
+          <label for="from" style="font-size:20px;margin-left:20%;">From:</label>
+          <label for="to" style="font-size:20px;margin-left:30%;">To:</label>
+          <br>
+          <input type="date" style="margin-left:20%;" name="from">
+          <input type="date" style="margin-left:32%;" name="to">
+          <span><button type="submit" style="margin-left:40%;margin-top: 40px;width:100px;" class="btn btn-primary">OK</button></span>
+          </form>
+          <button type="submit" class="btn btn-primary" style="width:100px;margin-left:90%;"><a style="color:white;text-decoration:none;" href="/rp">Print</a></button>
+          <table style="width:100%">
+            <tr style="background-color:#04009a;color:white;align-items:center;">
+              <th>Date</th>
+              <th>Shop</th>
+              <th>Bill number</th>
+              <th>Amount</th>
+            </tr>
+            <% for(var i=0;i<det.length;++i){ %>
+            <tr>
+              <th><%=det[i].date%></th>
+              <th style="width:200px"><%=det[i].sname%></th>
+              <th><%=det[i].bill%></th>
+              <th><%=det[i].amt%></th>
+            </tr>
+            <% } %>
+          </table>
+      </div>
+      </div>
